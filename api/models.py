@@ -29,7 +29,7 @@ class Book(models.Model):
     date_to_complete = models.DateField()
 
     def __str__(self):
-        return self.title
+        return f"{self.title[:10]}..."
 
 
 class Progress(models.Model):
